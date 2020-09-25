@@ -1,0 +1,6 @@
+C:\Users\k.noskov\source\repos\HomeWork\Exercise2\bin\Debug\Exercise2.exe.config
+C:\Users\k.noskov\source\repos\HomeWork\Exercise2\bin\Debug\Exercise2.exe
+C:\Users\k.noskov\source\repos\HomeWork\Exercise2\bin\Debug\Exercise2.pdb
+C:\Users\k.noskov\source\repos\HomeWork\Exercise2\obj\Debug\Exercise2.csproj.CoreCompileInputs.cache
+C:\Users\k.noskov\source\repos\HomeWork\Exercise2\obj\Debug\Exercise2.exe
+C:\Users\k.noskov\source\repos\HomeWork\Exercise2\obj\Debug\Exercise2.pdb
