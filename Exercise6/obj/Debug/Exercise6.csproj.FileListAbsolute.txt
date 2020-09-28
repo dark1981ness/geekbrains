@@ -1,0 +1,7 @@
+C:\Users\k.noskov\source\repos\HomeWork\Exercise6\bin\Debug\Exercise6.exe.config
+C:\Users\k.noskov\source\repos\HomeWork\Exercise6\bin\Debug\Exercise6.exe
+C:\Users\k.noskov\source\repos\HomeWork\Exercise6\bin\Debug\Exercise6.pdb
+C:\Users\k.noskov\source\repos\HomeWork\Exercise6\obj\Debug\Exercise6.csproj.CoreCompileInputs.cache
+C:\Users\k.noskov\source\repos\HomeWork\Exercise6\obj\Debug\Exercise6.exe
+C:\Users\k.noskov\source\repos\HomeWork\Exercise6\obj\Debug\Exercise6.pdb
+C:\Users\k.noskov\source\repos\HomeWork\Exercise6\obj\Debug\Exercise6.csprojAssemblyReference.cache
