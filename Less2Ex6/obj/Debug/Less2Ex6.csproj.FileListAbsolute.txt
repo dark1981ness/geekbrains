@@ -1,0 +1,10 @@
+C:\Users\k.noskov\source\repos\HomeWork\Less2Ex6\bin\Debug\Less2Ex6.exe.config
+C:\Users\k.noskov\source\repos\HomeWork\Less2Ex6\bin\Debug\Less2Ex6.exe
+C:\Users\k.noskov\source\repos\HomeWork\Less2Ex6\bin\Debug\Less2Ex6.pdb
+C:\Users\k.noskov\source\repos\HomeWork\Less2Ex6\obj\Debug\Less2Ex6.csproj.CoreCompileInputs.cache
+C:\Users\k.noskov\source\repos\HomeWork\Less2Ex6\obj\Debug\Less2Ex6.exe
+C:\Users\k.noskov\source\repos\HomeWork\Less2Ex6\obj\Debug\Less2Ex6.pdb
+C:\Users\k.noskov\source\repos\HomeWork\Less2Ex6\bin\Debug\Exercise6.exe
+C:\Users\k.noskov\source\repos\HomeWork\Less2Ex6\bin\Debug\Exercise6.pdb
+C:\Users\k.noskov\source\repos\HomeWork\Less2Ex6\bin\Debug\Exercise6.exe.config
+C:\Users\k.noskov\source\repos\HomeWork\Less2Ex6\obj\Debug\Less2Ex6.csproj.CopyComplete
