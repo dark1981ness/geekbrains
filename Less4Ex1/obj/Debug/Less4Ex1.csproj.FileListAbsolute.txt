@@ -1,0 +1,11 @@
+C:\Users\k.noskov\source\repos\HomeWork\Less4Ex1\bin\Debug\Less4Ex1.exe.config
+C:\Users\k.noskov\source\repos\HomeWork\Less4Ex1\bin\Debug\Less4Ex1.exe
+C:\Users\k.noskov\source\repos\HomeWork\Less4Ex1\bin\Debug\Less4Ex1.pdb
+C:\Users\k.noskov\source\repos\HomeWork\Less4Ex1\bin\Debug\Exercise6.exe
+C:\Users\k.noskov\source\repos\HomeWork\Less4Ex1\bin\Debug\Exercise6.pdb
+C:\Users\k.noskov\source\repos\HomeWork\Less4Ex1\bin\Debug\Exercise6.exe.config
+C:\Users\k.noskov\source\repos\HomeWork\Less4Ex1\obj\Debug\Less4Ex1.csprojAssemblyReference.cache
+C:\Users\k.noskov\source\repos\HomeWork\Less4Ex1\obj\Debug\Less4Ex1.csproj.CoreCompileInputs.cache
+C:\Users\k.noskov\source\repos\HomeWork\Less4Ex1\obj\Debug\Less4Ex1.csproj.CopyComplete
+C:\Users\k.noskov\source\repos\HomeWork\Less4Ex1\obj\Debug\Less4Ex1.exe
+C:\Users\k.noskov\source\repos\HomeWork\Less4Ex1\obj\Debug\Less4Ex1.pdb
