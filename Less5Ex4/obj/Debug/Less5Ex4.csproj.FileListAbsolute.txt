@@ -1,0 +1,7 @@
+C:\Users\k.noskov\source\repos\HomeWork\Less5Ex4\bin\Debug\Less5Ex4.exe.config
+C:\Users\k.noskov\source\repos\HomeWork\Less5Ex4\bin\Debug\Less5Ex4.exe
+C:\Users\k.noskov\source\repos\HomeWork\Less5Ex4\bin\Debug\Less5Ex4.pdb
+C:\Users\k.noskov\source\repos\HomeWork\Less5Ex4\obj\Debug\Less5Ex4.csprojAssemblyReference.cache
+C:\Users\k.noskov\source\repos\HomeWork\Less5Ex4\obj\Debug\Less5Ex4.csproj.CoreCompileInputs.cache
+C:\Users\k.noskov\source\repos\HomeWork\Less5Ex4\obj\Debug\Less5Ex4.exe
+C:\Users\k.noskov\source\repos\HomeWork\Less5Ex4\obj\Debug\Less5Ex4.pdb
