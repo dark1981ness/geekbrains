@@ -32,7 +32,7 @@ namespace Less7Ex1
 
         private void Doubler_Click(object sender, EventArgs e)
         {
-            Form doubler = new Doubler(0, 100) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true, FormBorderStyle = FormBorderStyle.None };
+            Form doubler = new Doubler(1, 100) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true, FormBorderStyle = FormBorderStyle.None };
             CloseFormsInsidePanel(mainPanel);
             this.mainPanel.Controls.Add(doubler);
             doubler.Show();

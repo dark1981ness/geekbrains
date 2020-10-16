@@ -87,6 +87,8 @@ namespace Less7Ex1
                 lblCompareResult.Text = "=";
                 lblHiddenNumber.Text = randomValue.ToString();
                 btnRestart.Enabled = true;
+                userNumberTextBox.Enabled = false;
+                btnUserTurn.Enabled = false;
             }
             else if (userNumber < randomValue)
             {

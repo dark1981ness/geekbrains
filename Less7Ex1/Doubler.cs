@@ -28,7 +28,7 @@ namespace Less7Ex1
         {
             InitializeComponent();
             userRes = new Stack<int>();
-            StartPoint = 0;
+            StartPoint = 1;
             EndPoint = 100;
         }
 
@@ -66,13 +66,15 @@ namespace Less7Ex1
             lblUserStepCount.Text = counter.ToString();
             btnDic["btnAdd"].Enabled = true;
             btnDic["btnMulti"].Enabled = true;
+            btnDic["btnUndo"].Enabled = true;
+            userRes.Clear();
         }
 
         private void btnStartGame_Click(object sender, EventArgs e)
         {
             MyRandomValue = RandomValue(StartPoint, EndPoint);
             lblForRandomNum.Text = MyRandomValue.ToString();
-            
+            userRes.Clear();
             btnDic["btnStartGame"].Enabled = false;
             btnDic["btnNewGame"].Enabled = true;
             btnDic["btnAdd"].Enabled = true;
@@ -97,16 +99,15 @@ namespace Less7Ex1
 
         private void btnUndo_Click(object sender, EventArgs e)
         {
-            userRes.Pop();
-            counter--;
-            lblUserResult.Text = userRes.Peek().ToString();
-            lblUserStepCount.Text = counter.ToString();
-            if (int.Parse(lblUserResult.Text) < int.Parse(lblForRandomNum.Text))
+            if(userRes.Count != 0)
             {
-                btnDic["btnAdd"].Enabled = true;
-                btnDic["btnMulti"].Enabled = true;
+                userRes.Pop();
+                counter--;
+                lblUserResult.Text = userRes.Peek().ToString();
+                lblUserStepCount.Text = counter.ToString();
+                CheckResult();
             }
-
+            
         }
 
         /// <summary>
@@ -126,6 +127,15 @@ namespace Less7Ex1
                 btnDic["btnMulti"].Enabled = false;
                 btnDic["btnUndo"].Enabled = false;
                 lblMinCount.Text = TryCount(MyRandomValue).ToString();
+            }
+            else if(int.Parse(lblUserResult.Text)*2 > int.Parse(lblForRandomNum.Text))
+            {
+                btnDic["btnMulti"].Enabled = false;
+            }
+            else if (int.Parse(lblUserResult.Text) < int.Parse(lblForRandomNum.Text))
+            {
+                btnDic["btnAdd"].Enabled = true;
+                btnDic["btnMulti"].Enabled = true;
             }
         }
 
