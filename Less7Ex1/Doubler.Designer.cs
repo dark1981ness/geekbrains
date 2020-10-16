@@ -36,14 +36,14 @@
             this.lblUserResult = new System.Windows.Forms.Label();
             this.btnStartGame = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblMinCount = new System.Windows.Forms.Label();
             this.lblUserStepCount = new System.Windows.Forms.Label();
             this.lblStep = new System.Windows.Forms.Label();
             this.lblForRandomNum = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnNewGame = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblMinCount = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -165,6 +165,28 @@
             this.panel1.Size = new System.Drawing.Size(390, 177);
             this.panel1.TabIndex = 7;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Control;
+            this.label2.Location = new System.Drawing.Point(10, 40);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(75, 20);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Ходы AI:";
+            // 
+            // lblMinCount
+            // 
+            this.lblMinCount.AutoSize = true;
+            this.lblMinCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblMinCount.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblMinCount.Location = new System.Drawing.Point(162, 40);
+            this.lblMinCount.Name = "lblMinCount";
+            this.lblMinCount.Size = new System.Drawing.Size(18, 20);
+            this.lblMinCount.TabIndex = 9;
+            this.lblMinCount.Text = "?";
+            // 
             // lblUserStepCount
             // 
             this.lblUserStepCount.AutoSize = true;
@@ -243,28 +265,6 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Компьютер выберет произвольное число от 0 до 100.\r\nПопробуйте получить это число " +
     "при помощи операций\r\n\"+1\" и \"х2\" за минимальное число попыток.\r\n";
-            // 
-            // lblMinCount
-            // 
-            this.lblMinCount.AutoSize = true;
-            this.lblMinCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblMinCount.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblMinCount.Location = new System.Drawing.Point(162, 40);
-            this.lblMinCount.Name = "lblMinCount";
-            this.lblMinCount.Size = new System.Drawing.Size(18, 20);
-            this.lblMinCount.TabIndex = 9;
-            this.lblMinCount.Text = "?";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(10, 40);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 20);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Ходы AI:";
             // 
             // Doubler
             // 

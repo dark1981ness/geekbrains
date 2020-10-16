@@ -97,10 +97,11 @@
             this.lblUserNumber.AutoSize = true;
             this.lblUserNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblUserNumber.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblUserNumber.Location = new System.Drawing.Point(132, 209);
+            this.lblUserNumber.Location = new System.Drawing.Point(137, 209);
             this.lblUserNumber.Name = "lblUserNumber";
             this.lblUserNumber.Size = new System.Drawing.Size(0, 63);
             this.lblUserNumber.TabIndex = 16;
+            this.lblUserNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnRestart
             // 
@@ -153,7 +154,7 @@
             this.lblHiddenNumber.Name = "lblHiddenNumber";
             this.lblHiddenNumber.Size = new System.Drawing.Size(0, 63);
             this.lblHiddenNumber.TabIndex = 12;
-            this.lblHiddenNumber.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblHiddenNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblCompareResult
             // 
@@ -165,6 +166,7 @@
             this.lblCompareResult.Size = new System.Drawing.Size(57, 63);
             this.lblCompareResult.TabIndex = 11;
             this.lblCompareResult.Text = "?";
+            this.lblCompareResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblResult
             // 
@@ -185,7 +187,7 @@
             this.btnUserTurn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUserTurn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnUserTurn.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnUserTurn.Location = new System.Drawing.Point(12, 290);
+            this.btnUserTurn.Location = new System.Drawing.Point(18, 290);
             this.btnUserTurn.Name = "btnUserTurn";
             this.btnUserTurn.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnUserTurn.Size = new System.Drawing.Size(113, 35);
@@ -212,7 +214,7 @@
             this.userNumberTextBox.Enabled = false;
             this.userNumberTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.userNumberTextBox.ForeColor = System.Drawing.SystemColors.Control;
-            this.userNumberTextBox.Location = new System.Drawing.Point(12, 206);
+            this.userNumberTextBox.Location = new System.Drawing.Point(17, 206);
             this.userNumberTextBox.MaxLength = 3;
             this.userNumberTextBox.Name = "userNumberTextBox";
             this.userNumberTextBox.Size = new System.Drawing.Size(114, 68);

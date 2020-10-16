@@ -126,6 +126,18 @@ namespace Less7Ex1
         private void userNumberTextBox_TextChanged(object sender, EventArgs e)
         {
             userNumberTextBox.Text = regex.Replace(userNumberTextBox.Text, "");
+            if(userNumberTextBox.Text != String.Empty)
+            {
+                if (int.Parse(userNumberTextBox.Text) >= EndPoint)
+                {
+                    userNumberTextBox.Text = EndPoint.ToString();
+                }
+                else if (int.Parse(userNumberTextBox.Text) < StartPoint)
+                {
+                    userNumberTextBox.Text = StartPoint.ToString();
+                }
+            }
+            
         }
 
         /// <summary>

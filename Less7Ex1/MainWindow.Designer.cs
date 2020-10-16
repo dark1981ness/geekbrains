@@ -54,7 +54,7 @@
             this.mainMenu.Location = new System.Drawing.Point(0, 0);
             this.mainMenu.Name = "mainMenu";
             this.mainMenu.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.mainMenu.Size = new System.Drawing.Size(490, 35);
+            this.mainMenu.Size = new System.Drawing.Size(488, 33);
             this.mainMenu.TabIndex = 2;
             this.mainMenu.Text = "mainMenu";
             this.mainMenu.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mainMenu_MouseDown);
@@ -76,7 +76,7 @@
             // 
             this.Exit.ForeColor = System.Drawing.SystemColors.Control;
             this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(180, 24);
+            this.Exit.Size = new System.Drawing.Size(118, 24);
             this.Exit.Text = "Выход";
             this.Exit.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
@@ -95,7 +95,7 @@
             // 
             this.Doubler.ForeColor = System.Drawing.SystemColors.Control;
             this.Doubler.Name = "Doubler";
-            this.Doubler.Size = new System.Drawing.Size(180, 24);
+            this.Doubler.Size = new System.Drawing.Size(162, 24);
             this.Doubler.Text = "Удвоитель";
             this.Doubler.Click += new System.EventHandler(this.Doubler_Click);
             // 
@@ -103,7 +103,7 @@
             // 
             this.GuessNumber.ForeColor = System.Drawing.SystemColors.Control;
             this.GuessNumber.Name = "GuessNumber";
-            this.GuessNumber.Size = new System.Drawing.Size(180, 24);
+            this.GuessNumber.Size = new System.Drawing.Size(162, 24);
             this.GuessNumber.Text = "Угадай число";
             this.GuessNumber.Click += new System.EventHandler(this.GuessNumber_Click);
             // 
@@ -119,13 +119,15 @@
             // mainPanel
             // 
             this.mainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.mainPanel.Location = new System.Drawing.Point(0, 41);
+            this.mainPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mainPanel.Location = new System.Drawing.Point(0, 38);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(490, 489);
+            this.mainPanel.Size = new System.Drawing.Size(490, 492);
             this.mainPanel.TabIndex = 4;
             // 
             // panel1
             // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.btnClose);
             this.panel1.Controls.Add(this.mainMenu);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -140,9 +142,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Location = new System.Drawing.Point(446, 0);
+            this.btnClose.Location = new System.Drawing.Point(444, 0);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(44, 35);
+            this.btnClose.Size = new System.Drawing.Size(44, 33);
             this.btnClose.TabIndex = 3;
             this.btnClose.Text = "X";
             this.btnClose.UseVisualStyleBackColor = true;
