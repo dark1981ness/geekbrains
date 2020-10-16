@@ -1,0 +1,11 @@
+C:\Users\k.noskov\source\repos\HomeWork\Less7Ex1\bin\Debug\Less7Ex1.exe.config
+C:\Users\k.noskov\source\repos\HomeWork\Less7Ex1\bin\Debug\Less7Ex1.exe
+C:\Users\k.noskov\source\repos\HomeWork\Less7Ex1\bin\Debug\Less7Ex1.pdb
+C:\Users\k.noskov\source\repos\HomeWork\Less7Ex1\obj\Debug\Less7Ex1.Properties.Resources.resources
+C:\Users\k.noskov\source\repos\HomeWork\Less7Ex1\obj\Debug\Less7Ex1.csproj.GenerateResource.cache
+C:\Users\k.noskov\source\repos\HomeWork\Less7Ex1\obj\Debug\Less7Ex1.csproj.CoreCompileInputs.cache
+C:\Users\k.noskov\source\repos\HomeWork\Less7Ex1\obj\Debug\Less7Ex1.exe
+C:\Users\k.noskov\source\repos\HomeWork\Less7Ex1\obj\Debug\Less7Ex1.pdb
+C:\Users\k.noskov\source\repos\HomeWork\Less7Ex1\obj\Debug\Less7Ex1.MainWindow.resources
+C:\Users\k.noskov\source\repos\HomeWork\Less7Ex1\obj\Debug\Less7Ex1.Doubler.resources
+C:\Users\k.noskov\source\repos\HomeWork\Less7Ex1\obj\Debug\Less7Ex1.GuessNumbers.resources
