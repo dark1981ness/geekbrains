@@ -57,11 +57,15 @@ namespace Less7Ex1
 
         private void btnUserTurn_Click(object sender, EventArgs e)
         {
-            UserNumber = int.Parse(userNumberTextBox.Text);
-            lblUserNumber.Text = UserNumber.ToString();
-            _testTryCount--;
-            CompareAnswer(_testTryCount, MyRandomValue, UserNumber);
-            userNumberTextBox.Clear();
+            if(userNumberTextBox.Text != String.Empty)
+            {
+                UserNumber = int.Parse(userNumberTextBox.Text);
+                lblUserNumber.Text = UserNumber.ToString();
+                _testTryCount--;
+                CompareAnswer(_testTryCount, MyRandomValue, UserNumber);
+                userNumberTextBox.Clear();
+            }
+            
             
         }
 
