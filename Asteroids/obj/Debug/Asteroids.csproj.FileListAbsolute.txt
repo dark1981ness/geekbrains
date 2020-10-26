@@ -1,0 +1,7 @@
+E:\learning\CSharpLev2\Asteroids\bin\Debug\Asteroids.exe.config
+E:\learning\CSharpLev2\Asteroids\bin\Debug\Asteroids.exe
+E:\learning\CSharpLev2\Asteroids\bin\Debug\Asteroids.pdb
+E:\learning\CSharpLev2\Asteroids\obj\Debug\Asteroids.csprojAssemblyReference.cache
+E:\learning\CSharpLev2\Asteroids\obj\Debug\Asteroids.csproj.CoreCompileInputs.cache
+E:\learning\CSharpLev2\Asteroids\obj\Debug\Asteroids.exe
+E:\learning\CSharpLev2\Asteroids\obj\Debug\Asteroids.pdb
