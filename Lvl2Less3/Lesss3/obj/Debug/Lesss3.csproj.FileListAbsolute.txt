@@ -1,0 +1,7 @@
+D:\learning\CSharpLev2\Lesss3\bin\Debug\Lesss3.exe.config
+D:\learning\CSharpLev2\Lesss3\bin\Debug\Lesss3.exe
+D:\learning\CSharpLev2\Lesss3\bin\Debug\Lesss3.pdb
+D:\learning\CSharpLev2\Lesss3\obj\Debug\Lesss3.csprojAssemblyReference.cache
+D:\learning\CSharpLev2\Lesss3\obj\Debug\Lesss3.csproj.CoreCompileInputs.cache
+D:\learning\CSharpLev2\Lesss3\obj\Debug\Lesss3.exe
+D:\learning\CSharpLev2\Lesss3\obj\Debug\Lesss3.pdb
