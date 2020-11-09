@@ -1,0 +1,6 @@
+D:\learning\CSharpLev2\Less4\bin\Debug\Less4.exe.config
+D:\learning\CSharpLev2\Less4\bin\Debug\Less4.exe
+D:\learning\CSharpLev2\Less4\bin\Debug\Less4.pdb
+D:\learning\CSharpLev2\Less4\obj\Debug\Less4.csproj.CoreCompileInputs.cache
+D:\learning\CSharpLev2\Less4\obj\Debug\Less4.exe
+D:\learning\CSharpLev2\Less4\obj\Debug\Less4.pdb
