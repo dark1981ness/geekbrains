@@ -1,0 +1,103 @@
+﻿<Window x:Class="WpfCSLev2_ADO.AddEmployeeForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfCSLev2_ADO"
+        mc:Ignorable="d"
+        Height="590"
+        Width="430"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        Foreground="White" WindowStartupLocation="CenterScreen"
+        Loaded="Window_Loaded">
+    <Window.Resources>
+
+    </Window.Resources>
+    <Border BorderThickness="3" CornerRadius="10" Padding="5,0,5,5">
+        <Border.BorderBrush>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFA20022" Offset="1"/>
+                <GradientStop Color="#FFC70039"/>
+            </LinearGradientBrush>
+        </Border.BorderBrush>
+        <Border.Effect>
+            <DropShadowEffect BlurRadius="10" ShadowDepth="4"/>
+        </Border.Effect>
+        <Border.Background>
+            <ImageBrush ImageSource="Resources/listitembgdflt.png" Opacity="0.3"/>
+        </Border.Background>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid Height="30" VerticalAlignment="Top" Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Image x:Name="Label" Source="Resources/user-info-icon.png" Grid.Column="0" Margin="5"/>
+                <TextBlock Text="CS2LVLWPF" MouseLeftButtonDown="OnDragMoveWindow" Grid.Column="1" TextAlignment="Left" Margin="5" FontSize="12" VerticalAlignment="Center"/>
+                <Button x:Name="CloseButton" Margin="0,0,5,0" Grid.Column="5" Style="{DynamicResource CloseAppButton}" Click="CloseButton_Click"/>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Label Content="Отдел:" Grid.Column="0" Grid.Row="0" Foreground="White" HorizontalAlignment="Left" FontSize="18" VerticalAlignment="Center" />
+                <Label Content="Имя:" Grid.Column="0" Grid.Row="1" Foreground="White" HorizontalAlignment="Left" FontSize="18" VerticalAlignment="Center"/>
+                <Label Content="Фамилия:" Grid.Column="0" Grid.Row="2" Foreground="White" HorizontalAlignment="Left" FontSize="18" VerticalAlignment="Center" />
+                <Label Content="Отчество:" Grid.Column="0" Grid.Row="3" Foreground="White" HorizontalAlignment="Left" FontSize="18" VerticalAlignment="Center" />
+                <Label Content="Дата рождения:" Grid.Column="0" Grid.Row="4" Foreground="White" HorizontalAlignment="Left" FontSize="18" VerticalAlignment="Center" />
+                <Label Content="Должность:" Grid.Column="0" Grid.Row="5" Foreground="White" HorizontalAlignment="Left" FontSize="18" VerticalAlignment="Center" />
+                <Label Content="Зарплата:" Grid.Column="0" Grid.Row="6" Foreground="White" HorizontalAlignment="Left" FontSize="18" VerticalAlignment="Center" />
+                <Label Content="Местный телефон:" Grid.Column="0" Grid.Row="7" Foreground="White" HorizontalAlignment="Left" FontSize="18" VerticalAlignment="Center" />
+                <Label Content="Почта:" Grid.Column="0" Grid.Row="8" Foreground="White" HorizontalAlignment="Left" FontSize="18" VerticalAlignment="Center"/>
+                <TextBox x:Name="uId" Grid.Column="1" Grid.Row="0" Margin="0,3,10,3" Style="{StaticResource UserNameTextBoxStyle}" HorizontalAlignment="Left"/>
+                <TextBox x:Name="uName" Grid.Column="1" Grid.Row="1" Margin="0,3,10,3" Style="{StaticResource UserNameTextBoxStyle}" HorizontalAlignment="Left"/>
+                <TextBox x:Name="uSurname" Grid.Column="1" Grid.Row="2" Margin="0,3,10,3" Style="{StaticResource UserNameTextBoxStyle}" HorizontalAlignment="Left"/>
+                <TextBox x:Name="uPatr" Grid.Column="1" Grid.Row="3" Margin="0,3,10,3" Style="{StaticResource UserNameTextBoxStyle}" HorizontalAlignment="Left"/>
+                <DatePicker x:Name="uBithday" Grid.Column="1" Grid.Row="4" BorderBrush="{x:Null}" HorizontalAlignment="Left" Padding="0,2,2,2" >
+                    <DatePicker.Resources>
+                        <Style TargetType="{x:Type DatePickerTextBox}">
+                            <Setter Property="Control.Template">
+                                <Setter.Value>
+                                    <ControlTemplate>
+                                        <TextBox x:Name="PART_TextBox" Text="{Binding SelectedDate, StringFormat='dd.MM.yyyy',RelativeSource={RelativeSource AncestorType={x:Type DatePicker}}}" Style="{DynamicResource UserNameTextBoxStyle}"/>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </DatePicker.Resources>
+                </DatePicker>
+                <TextBox x:Name="uPos" Grid.Column="1" Grid.Row="5" Margin="0,3,10,3" Style="{StaticResource UserNameTextBoxStyle}" HorizontalAlignment="Left"/>
+                <TextBox x:Name="uSalary" Grid.Column="1" Grid.Row="6" Margin="0,3,10,3" Style="{StaticResource UserNameTextBoxStyle}" HorizontalAlignment="Left"/>
+                <TextBox x:Name="uPhone" Grid.Column="1" Grid.Row="7" Margin="0,3,10,3" Style="{StaticResource UserNameTextBoxStyle}" HorizontalAlignment="Left"/>
+                <TextBox x:Name="uEmail" Grid.Column="1" Grid.Row="8" Margin="0,3,10,3" Style="{StaticResource UserNameTextBoxStyle}" HorizontalAlignment="Left"/>
+                <Button Content="OK" Width="{Binding ActualWidth, ElementName=CancelBtn, Mode=OneWay}" Grid.Column="0" Grid.Row="10" Margin="30,10,0,0" Click="Button_OK_Click" Style="{DynamicResource PopUpFormBtn}" HorizontalAlignment="Center"/>
+                <Button x:Name="CancelBtn" Content="Cancel" Grid.Column="1" Grid.Row="10" Margin="30,10,0,0" Click="Button_Cancek_Click" Style="{DynamicResource PopUpFormBtn}" HorizontalAlignment="Center"/>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>
