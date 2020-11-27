@@ -1,0 +1,168 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+         WindowStyle="None"
+        MinHeight="720"
+        MinWidth="1280"
+        AllowsTransparency="True"
+        BorderThickness="1"
+        BorderBrush="Black"
+        ResizeMode="NoResize"
+        Foreground="White"
+        >
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="OpenMenuBtn">
+            <BeginStoryboard Storyboard="{StaticResource MenuOpen}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="CloseMenuBtn">
+            <BeginStoryboard Storyboard="{StaticResource MenuClose}"/>
+        </EventTrigger>
+    </Window.Triggers>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <!-- window title bar-->
+        <Grid Height="30" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Top" Background="#B2000000">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Image x:Name="Label" Source="Resources/user-info-icon.png" Grid.Column="0" Margin="5"/>
+            <TextBlock Text="CS2LVLWPF" MouseLeftButtonDown="OnDragMoveWindow" Grid.Column="1"
+                       TextAlignment="Left" Margin="5" FontSize="12" VerticalAlignment="Center"/>
+            <Button x:Name="MinimizeButton"  Grid.Column="3" Style="{DynamicResource MinimizeButton}" Click="MinimizeButton_Click" Height="25"/>
+            <Button x:Name="MaximizeButton"  Grid.Column="4" Style="{DynamicResource MaximizeButton}" Click="MaximizeButton_Click"/>
+            <Button x:Name="CloseButton" Margin="0,0,5,0" Grid.Column="5" Style="{DynamicResource CloseAppButton}" Click="CloseButton_Click"/>
+        </Grid>
+
+        <!-- menu-->
+        <Grid  x:Name="GridMenu" Grid.Row="1" Grid.Column="0" Width="75" HorizontalAlignment="Left" Background="#B2000000">
+            <StackPanel>
+                <Grid Height="60">
+                    <Button x:Name="CloseMenuBtn" Height="40" Width="40" Margin="10,10,20,10"
+                            VerticalAlignment="Top" HorizontalAlignment="Right" Visibility="Collapsed"
+                            Click="CloseMenuBtn_Click" BorderBrush="{x:Null}" Style="{StaticResource CloseMenuButton}"/>
+                    <Button x:Name="OpenMenuBtn" Height="40" Width="40" Margin="10,10,20,10"
+                            VerticalAlignment="Top" HorizontalAlignment="Right" Click="OpenMenuBtn_Click"
+                            BorderBrush="{x:Null}" Style="{StaticResource OpenMenuButton}"/>
+                </Grid>
+                <ListView ScrollViewer.HorizontalScrollBarVisibility="Disabled" Foreground="White" Background="{x:Null}" BorderBrush="{x:Null}">
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="{x:Type ListViewItem}">
+                            <EventSetter Event="UIElement.PreviewMouseLeftButtonDown" Handler="ListViewItem_PreviewMouseLeftButtonDown"/>
+                        </Style>
+                    </ListView.ItemContainerStyle>
+                    <ListViewItem x:Name="Employees" Height="60" Cursor="Hand">
+                        <StackPanel Orientation="Horizontal" >
+                            <Image Source="Resources/EmployeesMenuIcon.png" Height="40" Width="40" Margin="10" VerticalAlignment="Center"/>
+                            <TextBlock Text="Загрузить" VerticalAlignment="Center" Margin="20 10" FontSize="20"/>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem x:Name="Logout" Height="60" Cursor="Hand">
+                        <StackPanel Orientation="Horizontal" >
+                            <Image Source="Resources/CloseAppIcon.png" Height="40" Width="40" Margin="10" VerticalAlignment="Center"/>
+                            <TextBlock Text="Выход" VerticalAlignment="Center" Margin="20 10" FontSize="20"/>
+                        </StackPanel>
+                    </ListViewItem>
+                </ListView>
+            </StackPanel>
+        </Grid>
+
+        <!-- main content-->
+        <Grid Grid.Row="1" Grid.Column="1" Background="#FF252526">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+           
+            <!-- show data inside datagrid-->
+            <Border BorderThickness="3" CornerRadius="10" Margin="10,10,10,10" Padding="5">
+                <Border.BorderBrush>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFA20022" Offset="1"/>
+                        <GradientStop Color="#FFC70039"/>
+                    </LinearGradientBrush>
+                </Border.BorderBrush>
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="10" ShadowDepth="4"/>
+                </Border.Effect>
+                <Border.Background>
+                    <ImageBrush ImageSource="Resources/listitembgdflt.png" Opacity="0.3"/>
+                </Border.Background>
+                <DataGrid x:Name="MainGrid"
+                              AutoGenerateColumns="False" CanUserAddRows="True"
+                              ItemsSource="{Binding}" Margin="5,5,5,2" Background="#FF333333"
+                              Foreground="White" BorderBrush="{x:Null}" HeadersVisibility="Column"
+                              GridLinesVisibility="None" RowBackground="#FF333333"
+                              ColumnHeaderStyle="{DynamicResource MainGridColumnHeaderStyle}" IsReadOnly="True">
+                    <DataGrid.Resources>
+                        <Style TargetType="DataGridRow">
+                            <Style.Resources>
+                                <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="#FFB24628" />
+                                <SolidColorBrush x:Key="{x:Static SystemColors.InactiveSelectionHighlightBrushKey}" Color="#FF272727" />
+                                <SolidColorBrush x:Key="{x:Static SystemColors.InactiveSelectionHighlightTextBrushKey}" Color="White"/>
+                            </Style.Resources>
+                        </Style>
+                    </DataGrid.Resources>
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Фамилия" Binding="{Binding surname}" Width="auto"/>
+                        <DataGridTextColumn Header="Имя" Binding="{Binding name}" Width="auto"/>
+                        <DataGridTextColumn Header="Отчество" Binding="{Binding patronymic}" Width="auto"/>
+                        <DataGridTemplateColumn Header="Дата рождения" CanUserSort="True">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <DatePicker SelectedDate="{Binding birthday}" Width="auto" IsEnabled="False"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTextColumn Header="Возраст" Binding="{Binding age}" Width="auto"/>
+                        <DataGridTextColumn Header="Зарплата" Binding="{Binding salary}" Width="auto"/>
+                        <DataGridTextColumn Header="Должность" Binding="{Binding position}" Width="auto"/>
+                        <DataGridTextColumn Header="Местный телефон" Binding="{Binding phone}" Width="auto"/>
+                        <DataGridHyperlinkColumn Header="Почта" Binding="{Binding email}" Width="auto"/>
+                        <DataGridTextColumn Header="Подразделение" Binding="{Binding dep_name}" Width="auto"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Border>
+
+            <!-- show list of departments-->
+            <Border BorderThickness="3" CornerRadius="10" Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" Margin="0,10,10,10" Padding="5">
+                <Border.BorderBrush>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFA20022" Offset="1"/>
+                        <GradientStop Color="#FFC70039"/>
+                    </LinearGradientBrush>
+                </Border.BorderBrush>
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="10" ShadowDepth="4"/>
+                </Border.Effect>
+                <Border.Background>
+                    <ImageBrush ImageSource="Resources/listitembgdflt.png" Opacity="0.3"/>
+                </Border.Background>
+                <StackPanel>
+                    <Label Content="ОТДЕЛЫ" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <ListView x:Name="employeeView"
+                          Background="{x:Null}"
+                          BorderThickness="0"
+                          ItemTemplate="{StaticResource listViewItem}"
+                          ItemContainerStyle="{StaticResource EmployeesListViewItem}"
+                     />
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>

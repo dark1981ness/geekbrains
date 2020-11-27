@@ -1,0 +1,16 @@
+C:\Users\Konstantin\source\repos\lvl2ex8\WpfApp1\bin\Debug\WpfApp1.exe.config
+C:\Users\Konstantin\source\repos\lvl2ex8\WpfApp1\bin\Debug\WpfApp1.exe
+C:\Users\Konstantin\source\repos\lvl2ex8\WpfApp1\bin\Debug\WpfApp1.pdb
+C:\Users\Konstantin\source\repos\lvl2ex8\WpfApp1\obj\Debug\MainWindow.g.cs
+C:\Users\Konstantin\source\repos\lvl2ex8\WpfApp1\obj\Debug\App.g.cs
+C:\Users\Konstantin\source\repos\lvl2ex8\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+C:\Users\Konstantin\source\repos\lvl2ex8\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+C:\Users\Konstantin\source\repos\lvl2ex8\WpfApp1\obj\Debug\MainWindow.baml
+C:\Users\Konstantin\source\repos\lvl2ex8\WpfApp1\obj\Debug\WpfApp1.g.resources
+C:\Users\Konstantin\source\repos\lvl2ex8\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+C:\Users\Konstantin\source\repos\lvl2ex8\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
+C:\Users\Konstantin\source\repos\lvl2ex8\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+C:\Users\Konstantin\source\repos\lvl2ex8\WpfApp1\obj\Debug\WpfApp1.exe
+C:\Users\Konstantin\source\repos\lvl2ex8\WpfApp1\obj\Debug\WpfApp1.pdb
+C:\Users\Konstantin\source\repos\lvl2ex8\WpfApp1\obj\Debug\App.baml
+C:\Users\Konstantin\source\repos\lvl2ex8\WpfApp1\obj\Debug\Dictionary.baml
