@@ -1,0 +1,6 @@
+C:\Users\Konstantin\source\repos\lvl2ex8\lvl2ex8\bin\lvl2ex8.dll.config
+C:\Users\Konstantin\source\repos\lvl2ex8\lvl2ex8\bin\lvl2ex8.dll
+C:\Users\Konstantin\source\repos\lvl2ex8\lvl2ex8\bin\lvl2ex8.pdb
+C:\Users\Konstantin\source\repos\lvl2ex8\lvl2ex8\obj\Debug\lvl2ex8.csproj.CoreCompileInputs.cache
+C:\Users\Konstantin\source\repos\lvl2ex8\lvl2ex8\obj\Debug\lvl2ex8.dll
+C:\Users\Konstantin\source\repos\lvl2ex8\lvl2ex8\obj\Debug\lvl2ex8.pdb
